@@ -15,13 +15,17 @@
 
 <%= link_to 'Edit Question', edit_question_path(@question), class: 'btn btn-warning' %>
 <br>
-<strong>Answers?</strong>
-<p>Coming soon!</p>
-<%#= render @question.answers %>
- 
-<strong>Add an answer:</strong>
-<%#= render "answers/form" %>
-<p>Coming soon!</p>
+<p></p>
+
+<strong>Answers:</strong>
+<%= render @question.answers %>
+
+<p></p>
+
+<strong>Add an Answer</strong>
+<%#= link_to 'Add Answer', new_answer_path(@answer), class: 'btn btn-primary' %>
+
+<p></p>
 
 <%= link_to 'Back', questions_path, class: 'btn btn-default'  %>
 

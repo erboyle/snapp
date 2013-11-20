@@ -2,7 +2,7 @@
 
 <% if @answer.errors.any? %>
 <div>
-	<h2><%= pluralize( @answer.errors.count, "error" ) %> prohibited this post from being saved.</h2>
+	<h2><%= pluralize( @answer.errors.count, "error" ) %> prohibited this answer from being saved.</h2>
 	<ul>
 		<% @answer.errors.full_messages.each do |msg| %>
 		<li><%= msg %></li>
